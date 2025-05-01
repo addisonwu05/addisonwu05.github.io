@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #000;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-pic {
+    width: 140px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 1.5rem;
+  }
+  
+  .header-text {
+    flex: 1;
+  }
+  
+  .links a {
+    text-decoration: none;
+    margin-right: 8px;
+    color: #1a0dab;
+  }
+  
+  h1, h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  footer {
+    margin-top: 3rem;
+    font-size: 0.9em;
+    color: #666;
+  }
