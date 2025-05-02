@@ -20,13 +20,12 @@ body {
   }
   
   .profile-pic {
-    width: 200px;                /* or 220px if you want larger */
-    height: auto;                /* keep aspect ratio */
-    border-radius: 6px;          /* or 50% if circular */
+    width: 260px;        /* Larger image width */
+    height: 260px;       /* Square frame */
+    object-fit: cover;   /* Crop to fit the box */
+    border-radius: 12px; /* Rounded corners */
     margin-right: 1.5rem;
     flex-shrink: 0;
-    object-fit: cover;           /* ensures the image fills the space */
-    display: block;              /* avoids baseline misalignment */
   }
   
   .header-text {
