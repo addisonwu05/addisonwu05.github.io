@@ -20,7 +20,7 @@ body {
   }
   
   .profile-pic {
-    width: 210px;       /* was 140px — increase size */
+    width: 420px;       /* was 140px — increase size */
     height: auto;
     border-radius: 6px;
     margin-right: 1.5rem;
