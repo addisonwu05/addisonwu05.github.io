@@ -35,33 +35,23 @@ body {
   justify-content: center;
 }
 
-.links a {
-  text-decoration: none;
-  margin-right: 8px;
-  color: #1a0dab;
-}
-
-.links a:visited {
-  color: #1a0dab; /* Stay blue after clicking */
-}
-
-.links a:hover,
-.links a:focus {
-  text-decoration: underline; /* Optional interactivity */
-}
-
-a {
-  text-decoration: none;
-  color: #1a0dab;
-}
-
-a:visited {
-  color: #1a0dab;
-}
-
+/* Unified link styling */
+a,
+a:visited,
 a:hover,
 a:focus {
-  text-decoration: underline;
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+/* Optional: Slight hover effect if desired */
+a:hover,
+a:focus {
+  opacity: 0.8;
+}
+
+.links a {
+  margin-right: 8px;
 }
 
 h1, h2 {
@@ -77,3 +67,4 @@ footer {
   font-size: 0.9em;
   color: #666;
 }
+
