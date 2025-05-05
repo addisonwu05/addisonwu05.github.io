@@ -1,56 +1,79 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background: white;
-    color: #000;
-    line-height: 1.6;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  
-  .profile-pic {
-    width: 260px;        /* Larger image width */
-    height: 260px;       /* Square frame */
-    object-fit: cover;   /* Crop to fit the box */
-    border-radius: 12px; /* Rounded corners */
-    margin-right: 1.5rem;
-    flex-shrink: 0;
-  }
-  
-  .header-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertically centers it */
-  }
-  
-  .links a {
-    text-decoration: none;
-    margin-right: 8px;
-    color: #1a0dab;
-  }
-  
-  h1, h2 {
-    margin-bottom: 0.5rem;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  footer {
-    margin-top: 3rem;
-    font-size: 0.9em;
-    color: #666;
-  }
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: #000;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.header-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links a {
+  text-decoration: none;
+  margin-right: 8px;
+  color: #1a0dab;
+}
+
+.links a:visited {
+  color: #1a0dab; /* Stay blue after clicking */
+}
+
+.links a:hover,
+.links a:focus {
+  text-decoration: underline; /* Optional interactivity */
+}
+
+a {
+  text-decoration: none;
+  color: #1a0dab;
+}
+
+a:visited {
+  color: #1a0dab;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9em;
+  color: #666;
+}
