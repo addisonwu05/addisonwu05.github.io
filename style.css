@@ -7,6 +7,11 @@ body {
   line-height: 1.6;
 }
 
+section h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
 .container {
   max-width: 800px;
   margin: 2rem auto;
