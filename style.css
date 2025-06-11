@@ -19,6 +19,12 @@ body {
   margin-bottom: 2rem;
 }
 
+.course-code {
+  display: inline-block;
+  min-width: 150px;
+  font-weight: bold;
+}
+
 .profile-pic {
   width: 260px;
   height: 260px;
