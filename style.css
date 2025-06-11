@@ -16,6 +16,13 @@ section h3 + ul li {
   margin-bottom: 0.6rem;
 }
 
+.course-code {
+  display: inline-block;
+  min-width: 130px;
+  font-weight: bold;
+  padding-right: 0.5rem; /* 👈 adds space between code and course name */
+}
+
 .container {
   max-width: 800px;
   margin: 2rem auto;
@@ -26,12 +33,6 @@ section h3 + ul li {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-}
-
-.course-code {
-  display: inline-block;
-  min-width: 150px;
-  font-weight: bold;
 }
 
 .profile-pic {
