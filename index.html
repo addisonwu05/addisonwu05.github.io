@@ -17,7 +17,7 @@
 
   <div class="container" style="margin-top: 2rem;">
     <header class="header">
-      <img src="profile.jpg" alt="Addison J. Wu" class="profile-pic" />
+      <img id="profile-pic" alt="Addison J. Wu" class="profile-pic" />
       <div class="header-text">
         <h1>Addison J. Wu</h1>
         <p>Undergrad @ Princeton</p>
@@ -55,5 +55,13 @@
       <p>© 2025 Addison J. Wu</p>
     </footer>
   </div>
+
+  <script>
+    const profileImg = document.getElementById('profile-pic');
+    const images = ['profile.jpg', 'profile2.jpg'];
+    const chosen = images[Math.floor(Math.random() * images.length)];
+    profileImg.src = chosen;
+  </script>
+
 </body>
 </html>
