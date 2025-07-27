@@ -24,7 +24,7 @@ section h3 + ul li {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1000px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
