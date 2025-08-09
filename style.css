@@ -39,7 +39,7 @@ section h3 + ul li {
   width: 260px;
   height: 260px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 1px;
   margin-right: 1.5rem;
   flex-shrink: 0;
 }
