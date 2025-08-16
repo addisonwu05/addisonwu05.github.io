@@ -17,17 +17,32 @@
 </head>
 <body>
 
+  <!-- Top bar (sticky, centered nav + right language switch) -->
+  <div style="
+    position: sticky; top: 0; z-index: 1000;
+    background: #fff; border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  ">
+    <div style="
+      max-width: 900px; margin: 0 auto;
+      display: flex; align-items: center;
+      gap: 1rem; padding: 0 16px; box-sizing: border-box;
+    ">
+      <div style="flex:1;"></div>
 
-    <div style="width:100%; display:flex; align-items:center; gap:1rem; padding:0 1rem; box-sizing:border-box; margin-bottom:2rem;">
-    <div style="flex:1; text-align:center;">
-        <a href="index_fr.html">Accueil</a> |
+      <!-- Centered nav -->
+      <nav style="text-align:center; white-space:nowrap;">
+        <span style="font-weight: bold; color: black;">Accueil</span> |
         <a href="publications_fr.html">Publications</a> |
         <a href="academics_fr.html">Études</a>
+      </nav>
+
+      <!-- Right language switch -->
+      <div style="flex:1; display:flex; justify-content:flex-end;">
+        <a href="index.html" style="font-size:0.95em; color:#555; text-decoration:none;">English</a>
+      </div>
     </div>
-    <div style="margin-left:auto; font-size:0.95em; color:#555;">
-        <a href="index.html" style="text-decoration:none;">English</a>
-    </div>
-    </div>
+  </div>
 
   <div class="container" style="margin-top: 2rem;">
     <header class="header">
@@ -35,7 +50,7 @@
       <div class="header-text">
         <h1>Addison J. Wu</h1>
         <p>Étudiant de premier cycle à Princeton</p>
-        <p>Email : addisonwu@princeton.edu (<a href="https://x.com/thegautamkamath/status/1857162058430665094" target="_blank">voir ceci</a>)</p>
+        <p>Email&nbsp;: addisonwu@princeton.edu (<a href="https://x.com/thegautamkamath/status/1857162058430665094" target="_blank">voir ceci</a>)</p>
         <div class="links">
           <a href="https://github.com/addisonwu05">GitHub</a>|
           <a href="https://scholar.google.com/citations?user=gYcmO4MAAAAJ&hl=en">Google Scholar</a>|
@@ -45,23 +60,22 @@
         </div>
       </div>
     </header>
-    
 
     <section>
-      <h2>Bonjour !</h2>
+      <h2>Bonjour&nbsp;!</h2>
       <p>
-        Je suis étudiant en troisième année de licence en <a href="https://www.princeton.edu/" target="_blank">informatique à l’Université de Princeton</a>. Je suis né dans la région de la Baie de San Francisco 🌉 mais j’ai grandi à Kingston, en Ontario (Canada) 🇨🇦. 
+        Je suis étudiant en troisième année de licence en <a href="https://www.princeton.edu/" target="_blank">informatique à l’Université de Princeton</a>. Je suis né dans la région de la Baie de San Francisco 🌉 mais j’ai grandi à Kingston, en Ontario (Canada) 🇨🇦.
       </p>
       <p>
         J’ai découvert l’apprentissage automatique en tant que chercheur au sein du <a href="https://www.mpilab.ca/" target="_blank">Multi-Physics Interaction Lab</a> de l’<a href="https://www.uwaterloo.ca/" target="_blank">Université de Waterloo</a>. J’ai eu la chance d’y être encadré par le <a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/profile/j6hickey" target="_blank">Professeur Jean-Pierre Hickey</a>, avec qui j’ai travaillé au développement de méthodes neuronales pour mieux localiser le bruit atmosphérique basse fréquence.
       </p>
-      
+
       <p>
-        Aujourd’hui, je me consacre à l’étude des capacités et des limites des grands modèles de fondation à travers une approche centrée sur l’humain, en tant que chercheur au <a href="https://cocosci.princeton.edu/index.php" target="_blank">Laboratoire de sciences cognitives computationnelles</a> et au <a href="https://pli.princeton.edu/" target="_blank">Princeton Language and Intelligence</a>, sous la direction du <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Professeur Tom Griffiths</a>.
+        Aujourd’hui, je me consacre à l’étude des capacités et des limites des <strong>grands modèles fondamentaux</strong> à travers une approche centrée sur l’humain, en tant que chercheur au <a href="https://cocosci.princeton.edu/index.php" target="_blank">Laboratoire de sciences cognitives computationnelles</a> et au <a href="https://pli.princeton.edu/" target="_blank">Princeton Language and Intelligence</a>, sous la direction du <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Professeur Tom Griffiths</a>.
       </p>
-      
+
       <p>
-        Mon objectif est de révéler les véritables potentialités des LLMs, au-delà de leur rôle d’encyclopédie interactive, pour en faire des agents collaboratifs capables d’interagir de manière pertinente avec les humains dans des situations techniques et sociales complexes. Chaque progrès dans cette voie nous rapproche d’un avenir où la relation entre humains et technologies pourra évoluer de façon symbiotique, fondée sur la confiance mutuelle et l’adaptation réciproque. 
+        Mon objectif est de révéler les véritables potentialités des <strong>LLM (modèles de langue de grande taille)</strong>, au-delà de leur rôle d’encyclopédie interactive, pour en faire des agents collaboratifs capables d’interagir de manière pertinente avec les humains dans des situations techniques et sociales complexes. Chaque progrès dans cette voie nous rapproche d’un avenir où la relation entre humains et technologies pourra évoluer de façon symbiotique, fondée sur la confiance mutuelle et l’adaptation réciproque.
       </p>
     </section>
 
