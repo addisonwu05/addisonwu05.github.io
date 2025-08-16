@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="alternate" href="index.html" hreflang="en" />
-<link rel="alternate" href="index_fr.html" hreflang="fr" />
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Addison J. Wu</title>
   <link rel="stylesheet" href="style.css" />
   <meta name="google-site-verification" content="PdV9226eUYoW_VhADfBEDy2wrlGhVC5AWjnm1DK3tqc" />
+
+  <!-- SEO: bilingual alternates (must be INSIDE <head>) -->
+  <link rel="alternate" href="index.html" hreflang="en" />
+  <link rel="alternate" href="index_fr.html" hreflang="fr" />
+  <link rel="alternate" href="index.html" hreflang="x-default" />
+  <link rel="canonical" href="index.html" />
 </head>
 <body>
 
-  <div style="display: flex; justify-content: center; margin-bottom: 2rem; gap: 1rem;">
-    <div>
+  <!-- Top bar with centered nav + right-aligned language switch -->
+  <div style="width:100%; display:flex; align-items:center; gap:1rem; padding:0 1rem; box-sizing:border-box; margin-bottom:2rem;">
+    <div style="flex:1; text-align:center;">
       <a href="index.html">Home</a> |
       <a href="publications.html">Publications</a> |
       <a href="academics.html">Academics</a>
     </div>
-    <div style="margin-left: auto;">
-      <a href="index_fr.html">Français</a>
+    <div style="margin-left:auto; font-size:0.95em; color:#555;">
+      <a href="index_fr.html" style="text-decoration:none;">Français</a>
     </div>
   </div>
+
   <div class="container" style="margin-top: 2rem;">
     <header class="header">
       <img id="profile-pic" alt="Addison J. Wu" class="profile-pic" />
@@ -37,7 +43,6 @@
         </div>
       </div>
     </header>
-    
 
     <section>
       <h2>Hey!</h2>
@@ -47,11 +52,9 @@
       <p>
         I got started with machine learning as a researcher with the <a href="https://www.mpilab.ca/" target="_blank">Multi-Physics Interaction Lab</a> at the <a href="https://www.uwaterloo.ca/" target="_blank">University of Waterloo</a>. There, I was grateful to be advised by <a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/profile/j6hickey" target="_blank">Prof. Jean-Pierre Hickey</a> as I developed better methods to locate low-frequency atmospheric noise with neural networks.
       </p>
-      
       <p>
         Nowadays, I've shifted my focus to better understanding the capabilities and limitations of large foundation models through a human-centered lens as a researcher with the <a href="https://cocosci.princeton.edu/index.php" target="_blank">Computational Cognitive Science Lab</a> and <a href="https://pli.princeton.edu/" target="_blank">Princeton Language and Intelligence</a>, where I'm grateful to be advised by <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Prof. Tom Griffiths</a>.
       </p>
-      
       <p>
         I seek to elicit the true capabilities of LLMs beyond merely serving as an encyclopedia-on-call, but instead, as collaborative agents capable of meaningfully interacting with humans in multi-layered technical and social scenarios. Every step towards this endeavour will also bring us one step closer to a future where the relationship between humans and technology will evolve symbiotically based on mutual trust and adaptation. 
       </p>
