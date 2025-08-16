@@ -13,36 +13,52 @@
   <link rel="canonical" href="academics.html" />
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
 
-    <!-- Nav bar -->
-    <div style="display: flex; justify-content: center; margin-bottom: 2rem; gap: 1rem;">
-      <div>
+  <!-- Top bar: same layout as Publications/Home -->
+  <div style="
+    position: sticky; top: 0; z-index: 1000;
+    background: #fff; border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  ">
+    <div style="
+      max-width: 900px; margin: 0 auto;
+      display: flex; align-items: center;
+      gap: 1rem; padding: 0 16px; box-sizing: border-box;
+    ">
+      <div style="flex:1;"></div>
+
+      <!-- Centered primary nav -->
+      <nav style="text-align:center; white-space:nowrap;">
         <a href="index.html">Home</a> |
         <a href="publications.html">Publications</a> |
-        <a href="academics.html">Academics</a>
-      </div>
-      <div style="margin-left: auto;">
-        <a href="academics_fr.html">Français</a>
+        <span style="font-weight: bold; color: black;">Academics</span>
+      </nav>
+
+      <!-- Right language switch -->
+      <div style="flex:1; display:flex; justify-content:flex-end;">
+        <a href="academics_fr.html" style="font-size:0.95em; color:#555; text-decoration:none;">Français</a>
       </div>
     </div>
+  </div>
+
+  <div class="container">
     <section>
-    <h2>Honours</h2>
-    <ul>
+      <h2>Honours</h2>
+      <ul>
         <li>
-        <span style="font-weight: bold; white-space: nowrap;">Shapiro Prize:</span> Top 3% for academic achievement among all freshman and sophomore students at Princeton
+          <span style="font-weight: bold; white-space: nowrap;">Shapiro Prize:</span>
+          Top 3% for academic achievement among all freshman and sophomore students at Princeton
         </li>
-    </ul>
+      </ul>
     </section>
 
     <!-- Courses -->
     <section>
-    <h2>Courses</h2>
-    * indicates graduate coursework
+      <h2>Courses</h2>
+      * indicates graduate coursework
 
-    <h3>Computer Science</h3>
-    <ul>
+      <h3>Computer Science</h3>
+      <ul>
         <li><strong><span class="course-code">COS 598B*</span> Machine Behavior</strong> <em>taught by Manoel Horta Ribeiro</em></li>
         <li><strong><span class="course-code">COS 585*</span> Information Theory (in progress)</strong> <em>taught by Ran Raz</em></li>
         <li><strong><span class="course-code">COS 522*</span> Computational Complexity</strong> <em>taught by Gillat Kol</em></li>
@@ -56,10 +72,10 @@
         <li><strong><span class="course-code">COS 226</span> Algorithms and Data Structures</strong> <em>taught by Gillat Kol, Pedro Paredes</em></li>
         <li><strong><span class="course-code">COS 217</span> Programming Systems</strong> <em>taught by Zak Kincaid, Donna Gabai, Christopher Moretti</em></li>
         <li><strong><span class="course-code">COS 126</span> Computer Science: An Interdisciplinary Approach</strong> <em>taught by Alan Kaplan</em></li>
-    </ul>
+      </ul>
 
-    <h3>Mathematics and Natural Sciences</h3>
-    <ul>
+      <h3>Mathematics and Natural Sciences</h3>
+      <ul>
         <li><strong><span class="course-code">MAT 217</span> Honors Linear Algebra</strong> <em>taught by Jakub Witaszek</em></li>
         <li><strong><span class="course-code">MAT 215</span> Honors Analysis</strong> <em>taught by Charles Fefferman, Samuel Pérez-Ayala</em></li>
         <li><strong><span class="course-code">MAT 203</span> Advanced Vector Calculus</strong> <em>taught by David Gabai</em></li>
@@ -67,27 +83,24 @@
         <li><strong><span class="course-code">ORF 309</span> Probability and Stochastic Systems</strong> <em>taught by Mark Cerenzia</em></li>
         <li><strong><span class="course-code">PHY 104</span> General Physics II: Electricity and Magnetism</strong> <em>taught by Christopher Tully</em></li>
         <li><strong><span class="course-code">PHY 103</span> General Physics I: Mechanics</strong> <em>taught by Isobel Ojalvo</em></li>
-    </ul>
+      </ul>
 
-    <h3>Humanities and Social Sciences</h3>
-    <ul>
+      <h3>Humanities and Social Sciences</h3>
+      <ul>
         <li><strong><span class="course-code">ECO 310</span> Microeconomic Theory: A Mathematical Approach</strong> <em>taught by Can Urgun</em></li>
         <li><strong><span class="course-code">FRE 108</span> Advanced French</strong> <em>taught by Murielle Perrier, Isabelle Chen</em></li>
         <li><strong><span class="course-code">PHI 201</span> Logic</strong> <em>taught by Hans Halvorson</em></li>
         <li><strong><span class="course-code">PSY 360</span> Computational Models of Cognition (in progress)</strong> <em>taught by Tom Griffiths</em></li>
         <li><strong><span class="course-code">WRI 195</span> Writing Seminar: Captivating Animals</strong> <em>taught by Catherine Young</em></li>
-    </ul>
+      </ul>
     </section>
 
     <section>
-    <h2>Teaching Experience</h2>
-    <ul>
-    <li><strong><span class="course-code">COS 226</span> Algorithms and Data Structures</strong> (Fall 2024, Spring 2025)
-    </ul>
+      <h2>Teaching Experience</h2>
+      <ul>
+        <li><strong><span class="course-code">COS 226</span> Algorithms and Data Structures</strong> (Fall 2024, Spring 2025)</li>
+      </ul>
     </section>
-
-
-
 
     <!-- Footer -->
     <footer><p>© 2025 Addison J. Wu</p></footer>
