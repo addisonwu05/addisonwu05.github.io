@@ -88,3 +88,7 @@ footer {
   color: #666;
 }
 
+.updates-list li {
+  margin-bottom: 12px;   /* vertical spacing between items */
+  line-height: 1.5;      /* improves readability */
+}
