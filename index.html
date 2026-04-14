@@ -7,65 +7,14 @@
   <link rel="stylesheet" href="style.css" />
   <meta name="google-site-verification" content="PdV9226eUYoW_VhADfBEDy2wrlGhVC5AWjnm1DK3tqc" />
 
-  <!-- SEO: bilingual alternates (must be INSIDE <head>) -->
   <link rel="alternate" href="index.html" hreflang="en" />
-  <!-- <link rel="alternate" href="index_fr.html" hreflang="fr" /> -->
   <link rel="alternate" href="index.html" hreflang="x-default" />
   <link rel="canonical" href="index.html" />
 </head>
 <body>
 
-<!--
-Top bar with centered nav + right-aligned language switch
-<div style="
-  position: sticky; top: 0; z-index: 1000;
-  background: #fff; border-bottom: 1px solid #eee;
-  padding: 10px 0;
-">
-  <div style="
-    max-width: 900px; margin: 0 auto;
-    display: flex; align-items: center;
-    gap: 1rem; padding: 0 16px; box-sizing: border-box;
-  ">
-    [left spacer keeps center truly centered]
-    <div style="flex:1;"></div>
-
-    [center nav]
-    <nav style="text-align:center; white-space:nowrap;">
-      <span style="font-weight: bold; color: black;">Home</span> |
-      <a href="publications.html">Publications</a> |
-      <a href="academics.html">Academics</a>
-    </nav>
-
-    [right language switch]
-    <div style="flex:1; display:flex; justify-content:flex-end;">
-      <a href="index_fr.html" style="font-size:0.95em; color:#555; text-decoration:none;">Français</a>
-    </div>
-  </div>
-</div>
--->
-
-  <!-- Top bar with centered nav -->
-  <div style="
-    position: sticky; top: 0; z-index: 1000;
-    background: #fff; border-bottom: 1px solid #eee;
-    padding: 10px 0;
-  ">
-    <div style="
-      max-width: 900px; margin: 0 auto;
-      display: flex; justify-content: center; align-items: center;
-      padding: 0 16px; box-sizing: border-box;
-    ">
-      <nav style="text-align:center; white-space:nowrap;">
-        <span style="font-weight: bold; color: black;">Home</span> |
-        <a href="publications.html">Publications</a> |
-        <a href="academics.html">Academics</a>
-      </nav>
-    </div>
-  </div>
-
   <div class="container" style="margin-top: 2rem;">
-    <header class="header">
+    <header class="header" id="about">
       <img id="profile-pic" alt="Addison J. Wu" class="profile-pic" />
       <div class="header-text">
         <h1>Addison J. Wu</h1>
@@ -83,7 +32,7 @@ Top bar with centered nav + right-aligned language switch
     <section>
       <h2>Hey!</h2>
       <p>
-        I'm a junior (third-year) at Princeton University studying computer science and math, grateful to be advised by Tom Griffiths, Zhuang Liu, and Peter Henderson. I was born in the Bay Area 🌉 but have lived in Kingston, Ontario, Canada 🇨🇦 for my entire life. 
+        I'm a junior (third-year) at Princeton University studying computer science and math, grateful to be advised by Tom Griffiths, Zhuang Liu, and Peter Henderson. I was born in the Bay Area 🌉 but have lived in Kingston, Ontario, Canada 🇨🇦 for my entire life.
       </p>
       <p>
         This summer, I will be joining the <a href="https://safe.ai/">Center for AI Safety</a> as a Research Intern.
@@ -96,42 +45,67 @@ Top bar with centered nav + right-aligned language switch
       </p>
     </section>
 
-    <section>
+    <section id="updates">
       <h2>Updates</h2>
       <ul class="updates-list">
         <li><strong>Jun–Aug 2026:</strong> Incoming Research Intern at the <a href="https://safe.ai/">Center for AI Safety (CAIS)</a> in San Francisco.</li>
 
-        <li><strong>Apr 2026:</strong> Presenting two papers on 
-          <a href="https://openreview.net/forum?id=anDIdtSuA8&referrer=%5Bthe%20profile%20of%20Thomas%20L.%20Griffiths%5D(%2Fprofile%3Fid%3D~Thomas_L._Griffiths1)">LLMs navigating conflicts of interest</a> (AIAgentsWild) and 
-          <a href="https://openreview.net/forum?id=IgMZ1qT7iR&referrer=%5Bthe%20profile%20of%20Jasin%20Cekinmez%5D(%2Fprofile%3Fid%3D~Jasin_Cekinmez1)">a closer look at positional biases</a> (ICBINB) 
+        <li><strong>Apr 2026:</strong> Presenting two papers on
+          <a href="https://openreview.net/forum?id=anDIdtSuA8&referrer=%5Bthe%20profile%20of%20Thomas%20L.%20Griffiths%5D(%2Fprofile%3Fid%3D~Thomas_L._Griffiths1)">LLMs navigating conflicts of interest</a> (AIAgentsWild) and
+          <a href="https://openreview.net/forum?id=IgMZ1qT7iR&referrer=%5Bthe%20profile%20of%20Jasin%20Cekinmez%5D(%2Fprofile%3Fid%3D~Jasin_Cekinmez1)">a closer look at positional biases</a> (ICBINB)
           at ICLR 2026, see you in Rio de Janeiro!
         </li>
 
         <li><strong>Feb 2026:</strong> My co-author <a href="https://baixuechunzi.github.io/uchicago/">Xuechunzi Bai</a> presented our paper on <a href="https://arxiv.org/abs/2511.06148">LLMs naturally developing stereotypical beliefs</a> as one of four <strong style="color: red;">Invited Symposia speakers</strong> at SPSP 2026 in Chicago!
         </li>
 
-        <li><strong>Jan 2026:</strong> Excited to have recevied the Outstanding CS Independent Work Prize for my work on 
+        <li><strong>Jan 2026:</strong> Excited to have recevied the Outstanding CS Independent Work Prize for my work on
           <a href="https://arxiv.org/abs/2510.19687">LLM vigilance failures</a>!
         </li>
 
-        <li><strong>Dec 2025:</strong> Presenting two papers on 
-          <a href="https://arxiv.org/abs/2510.19687">LLM vigilance failures</a> (main) and 
-          <a href="https://arxiv.org/abs/2511.06148">emergent social biases</a> (MTI-LLM) 
+        <li><strong>Dec 2025:</strong> Presenting two papers on
+          <a href="https://arxiv.org/abs/2510.19687">LLM vigilance failures</a> (main) and
+          <a href="https://arxiv.org/abs/2511.06148">emergent social biases</a> (MTI-LLM)
           at NeurIPS 2025, see you in San Diego! Very grateful to be funded by the NeurIPS Scholar Award!
         </li>
 
-        <li><strong>Oct 2025:</strong> Our paper on 
-          <a href="https://arxiv.org/abs/2510.19687">LLM vigilance failures</a> was accepted as a 
+        <li><strong>Oct 2025:</strong> Our paper on
+          <a href="https://arxiv.org/abs/2510.19687">LLM vigilance failures</a> was accepted as a
           <strong style="color: red;">Spotlight Oral</strong> at PragLM @ COLM 2025, see you in Montréal!
         </li>
 
-        <li><strong>Jul 2025:</strong> Presenting our paper on 
-          <a href="https://arxiv.org/abs/2410.21333">parallels between human overthinking and LLM CoT failures</a> 
+        <li><strong>Jul 2025:</strong> Presenting our paper on
+          <a href="https://arxiv.org/abs/2410.21333">parallels between human overthinking and LLM CoT failures</a>
           at ICML 2025, see you in Vancouver!
         </li>
       </ul>
     </section>
 
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <ul>
+        <li style="margin-bottom: 1.5em;">
+          <strong>Are Large Language Models Sensitive to the Motives Behind Communication?</strong><br/>
+          <strong>Addison J. Wu*</strong>,
+          <a href="https://theryanl.github.io/" target="_blank">Ryan Liu</a>*,
+          <a href="https://keremoktar.com/" target="_blank">Kerem Oktar</a>*,
+          <a href="https://www.tedsumers.info/" target="_blank">Theodore R. Sumers</a>,
+          <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Thomas L. Griffiths</a><br/>
+          NeurIPS 2025 <a href="https://neurips.cc/virtual/2025/poster/115960">[Project Page]</a> <a href="https://arxiv.org/abs/2510.19687">[arXiv]</a><br/>
+          <strong style="color: red;">Oral</strong> at PragLM @ COLM 2025
+        </li>
+
+        <li style="margin-bottom: 1.5em;">
+          <strong>Large Language Models Develop Novel Social Biases Through Adaptive Exploration</strong><br/>
+          <strong>Addison J. Wu*</strong>,
+          <a href="https://theryanl.github.io/" target="_blank">Ryan Liu</a>*,
+          <a href="https://baixuechunzi.github.io/uchicago/" target="_blank">Xuechunzi Bai</a>,
+          <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Thomas L. Griffiths</a><br/>
+          MTI-LLM @ NeurIPS 2025 <a href="https://arxiv.org/abs/2511.06148">[arXiv]</a><br/>
+          <a href="https://spsp.org/events/annual-convention/schedule/featured-sessions/invited-symposia"><strong>SPSP 2026 Invited Symposia</strong></a> Talk
+        </li>
+      </ul>
+    </section>
 
     <footer>
       <p>© 2026 Addison J. Wu</p>
@@ -140,7 +114,6 @@ Top bar with centered nav + right-aligned language switch
 
   <script>
     const profileImg = document.getElementById('profile-pic');
-    //const images = ['profile.jpg', 'profile3.jpg', 'profile4.jpg'];
     const images = ['profile4.jpg'];
     const chosen = images[Math.floor(Math.random() * images.length)];
     profileImg.src = chosen;
