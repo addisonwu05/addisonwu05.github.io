@@ -92,3 +92,17 @@ footer {
   margin-bottom: 12px;   /* vertical spacing between items */
   line-height: 1.5;      /* improves readability */
 }
+
+@media (max-width: 520px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
