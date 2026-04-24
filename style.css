@@ -93,11 +93,6 @@ footer {
   line-height: 1.5;      /* improves readability */
 }
 
-.highlight-paper {
-  background: #fffde7;
-  border-radius: 4px;
-}
-
 section ul li {
   padding-left: 0.75rem;
 }
