@@ -13,6 +13,23 @@
 </head>
 <body>
 
+<div style="
+  position: sticky; top: 0; z-index: 1000;
+  background: #fff; border-bottom: 1px solid #eee;
+  padding: 10px 0;
+">
+  <div style="
+    max-width: 900px; margin: 0 auto;
+    display: flex; justify-content: center; align-items: center;
+    padding: 0 16px; box-sizing: border-box;
+  ">
+    <nav style="text-align:center; white-space:nowrap;">
+      <span style="font-weight: bold; color: black;">Home</span> |
+      <a href="publications.html">Publications</a>
+    </nav>
+  </div>
+</div>
+
   <div class="container" style="margin-top: 2rem;">
     <header class="header" id="about">
       <img id="profile-pic" alt="Addison J. Wu" class="profile-pic" />
@@ -82,8 +99,7 @@
     </section> -->
 
     <section id="publications">
-      <h2>Publications</h2>
-      <h3>Conference</h3>
+      <h2>Selected Publications <a href="publications.html" style="font-size: 0.6em; font-weight: normal; color: #555; text-decoration: none;">[See all publications →]</a></h2>
       <ul>
         <li style="margin-bottom: 1.5em;">
           <strong>Are Large Language Models Sensitive to the Motives Behind Communication?</strong><br/>
@@ -97,43 +113,6 @@
         </li>
 
         <li style="margin-bottom: 1.5em;">
-          <strong>Mind Your Step (by Step): Chain-of-Thought can Reduce Performance on Tasks where Thinking Makes Humans Worse</strong><br/>
-          <a href="https://theryanl.github.io/" target="_blank">Ryan Liu</a>*,
-          <a href="https://jiayigeng.github.io/" target="_blank">Jiayi Geng</a>*,
-          <strong>Addison J. Wu</strong>,
-          <a href="https://ilia10000.github.io/" target="_blank">Ilia Sucholutsky</a>,
-          <a href="https://psych.princeton.edu/people/tania-lombrozo" target="_blank">Tania Lombrozo</a>,
-          <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Thomas L. Griffiths</a><br/>
-          ICML 2025
-          <a href="https://icml.cc/virtual/2025/poster/45714">[Project Page]</a>
-          <a href="https://arxiv.org/abs/2410.21333">[arXiv]</a><br/>
-          Press coverage:
-          <a href="https://www.theinformation.com/articles/llms-falling-short?rc=nhywxk"><strong>The Information</strong></a>
-          <a href="https://drive.google.com/file/d/1PZ5XfPh67LaUVnX9mfdUEOLShaNUgYKV/view?usp=sharing">[text]</a>
-        </li>
-      </ul>
-
-      <h3>Workshop</h3>
-      <ul>
-        <li style="margin-bottom: 1.5em;">
-          <strong>Ads in AI Chatbots? An Analysis of How Large Language Models Navigate Conflicts of Interest</strong><br/>
-          <strong>Addison J. Wu</strong>*,
-          <a href="https://theryanl.github.io/" target="_blank">Ryan Liu</a>*,
-          <a href="https://stellalisy.com/" target="_blank">Shuyue Stella Li</a>,
-          <a href="https://homes.cs.washington.edu/~yuliats/" target="_blank">Yulia Tsvetkov</a>,
-          <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Thomas L. Griffiths</a><br/>
-          Agents in the Wild @ ICLR 2026 <a href="https://arxiv.org/abs/2604.08525">[arXiv]</a>
-        </li>
-
-        <li style="margin-bottom: 1.5em;">
-          <strong>Query Timing Produces Opposite Positional Biases Between LLMs and Humans</strong><br/>
-          <a href="https://www.linkedin.com/in/jasincekinmez" target="_blank">Jasin Cekinmez</a>*,
-          <strong>Addison J. Wu</strong>*,
-          <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Thomas L. Griffiths</a><br/>
-          ICBINB @ ICLR 2026 <a href="https://openreview.net/forum?id=IgMZ1qT7iR&referrer=%5Bthe%20profile%20of%20Thomas%20L.%20Griffiths%5D(%2Fprofile%3Fid%3D~Thomas_L._Griffiths1)">[OpenReview]</a>
-        </li>
-
-        <li style="margin-bottom: 1.5em;">
           <strong>Large Language Models Develop Novel Social Biases Through Adaptive Exploration</strong><br/>
           <strong>Addison J. Wu</strong>*,
           <a href="https://theryanl.github.io/" target="_blank">Ryan Liu</a>*,
@@ -142,17 +121,15 @@
           MTI-LLM @ NeurIPS 2025 <a href="https://arxiv.org/abs/2511.06148">[arXiv]</a><br/>
           <a href="https://spsp.org/events/annual-convention/schedule/featured-sessions/invited-symposia"><strong>SPSP 2026 Invited Symposia</strong></a> Talk
         </li>
-      </ul>
 
-      <h3>Other</h3>
-      <ul>
         <li style="margin-bottom: 1.5em;">
-          <strong>Toward a Neural Network-Based Approach for Improved Atmospheric Infrasound Source Localization</strong><br/>
-          <strong>Addison J. Wu</strong>,
-          <a href="https://www.linkedin.com/in/arnav-joshi-27a796191/" target="_blank">Arnav Joshi</a>,
-          <a href="https://uwaterloo.ca/mechanical-mechatronics-engineering/profile/j6hickey" target="_blank">Jean-Pierre Hickey</a><br/>
-          IEEE Access, 2025
-          <a href="https://ieeexplore.ieee.org/abstract/document/10966842">[Paper]</a>
+          <strong>Ads in AI Chatbots? An Analysis of How Large Language Models Navigate Conflicts of Interest</strong><br/>
+          <strong>Addison J. Wu</strong>*,
+          <a href="https://theryanl.github.io/" target="_blank">Ryan Liu</a>*,
+          <a href="https://stellalisy.com/" target="_blank">Shuyue Stella Li</a>,
+          <a href="https://homes.cs.washington.edu/~yuliats/" target="_blank">Yulia Tsvetkov</a>,
+          <a href="https://cocosci.princeton.edu/tom/index.php" target="_blank">Thomas L. Griffiths</a><br/>
+          Agents in the Wild @ ICLR 2026 <a href="https://arxiv.org/abs/2604.08525">[arXiv]</a>
         </li>
       </ul>
     </section>
