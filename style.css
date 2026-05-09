@@ -35,16 +35,17 @@ section h3 + ul li {
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 2rem;
 }
 
 .profile-pic {
-  width: 260px;
-  height: 260px;
+  width: 186px;
+  height: 186px;
   object-fit: cover;
   border-radius: 5px;
   margin-right: 1.5rem;
+  margin-top: 29px;
   flex-shrink: 0;
 }
 
