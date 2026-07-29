@@ -116,13 +116,13 @@ section ul li {
 }
 
 /* Every figure occupies an identical box, so the entries line up in a grid.
-   object-fit: contain scales without cropping; object-position pins each
-   figure to the left so the column edge stays crisp. */
+   object-fit: contain scales without cropping; centering in the box puts every
+   figure on the same vertical centre axis regardless of its aspect ratio. */
 .pub-fig img {
   width: 100%;
   height: 105px;
   object-fit: contain;
-  object-position: left center;
+  object-position: center;
   background: #fff;
 }
 
