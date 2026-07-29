@@ -98,16 +98,57 @@ section ul li {
   padding-left: 0.75rem;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 640px) {
+  .container {
+    margin: 1.25rem auto;
+  }
+
+  /* Keep the desktop layout on mobile: photo left, details right */
   .header {
-    flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 1.5rem;
   }
 
   .profile-pic {
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-    margin-bottom: 1rem;
+    width: 120px;
+    height: 120px;
+    margin-right: 1rem;
+    margin-top: 4px;
+  }
+
+  .header-text {
+    min-width: 0;
+  }
+
+  .header-text h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  .header-text p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    overflow-wrap: break-word;
+  }
+
+  .links {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-pic {
+    width: 96px;
+    height: 96px;
+    margin-right: 0.85rem;
+  }
+
+  .header-text h1 {
+    font-size: 1.35rem;
+  }
+
+  .header-text p,
+  .links {
+    font-size: 0.9rem;
   }
 }
