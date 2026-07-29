@@ -104,7 +104,7 @@ section ul li {
 /* Publication entries: teaser figure left, details right */
 .pub {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1.5em;
 }
 
