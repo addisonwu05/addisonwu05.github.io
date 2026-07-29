@@ -126,9 +126,55 @@ section ul li {
   background: #fff;
 }
 
+.pub-fig a {
+  display: block;
+  cursor: zoom-in;
+}
+
 .pub-fig a:hover img,
 .pub-fig a:focus img {
   opacity: 0.75;
+}
+
+/* Full-size figure overlay (see lightbox.js) */
+.lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.82);
+  cursor: zoom-out;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #fff;
+  font-size: 2.75rem;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .pub-body {
