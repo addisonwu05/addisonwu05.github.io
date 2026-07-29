@@ -28,9 +28,10 @@ section h3 + ul li {
 }
 
 .container {
-  /* Wide enough that every publication entry fits on exactly three lines:
-     title / authors / venue + press. Widest entry needs ~900px of text. */
-  max-width: 1500px;
+  /* Sized to the widest publication row so the prose, headings and entries all
+     end at the same right edge: 280px figure + 24px gap + ~900px of text
+     (the longest title) + 32px padding. Any wider and only the prose stretches. */
+  max-width: 1250px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
