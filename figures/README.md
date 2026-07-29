@@ -22,9 +22,13 @@ Notes:
 
 - `.png` is what the HTML points at. To use a `.jpg` instead, change the `src`
   on that entry's `<img>` in both `index.html` and `publications.html`.
-- Displayed at 170px wide (100px on phones), capped at 130px tall, aspect ratio
-  preserved. A wide-ish crop of the paper's main figure looks best.
-- Full-resolution copies live in `figures/originals/` (git-ignored, local
-  only); the served versions are capped at 700px wide.
+- Thumbnails render in a fixed 240x90 box (130x60 on phones, 105x48 on small
+  ones) so every entry lines up. Images are scaled to fit, never cropped, so a
+  wide-ish crop of the paper's main figure looks best.
+- Clicking a thumbnail opens `figures/full/<name>.png` in a new tab. Add a new
+  paper's figure to BOTH `figures/` (thumbnail) and `figures/full/`.
+- Three sizes per figure: `figures/` is served on the page (≤700px wide),
+  `figures/full/` is the click-through (≤1600px wide), and
+  `figures/originals/` keeps the untouched export (git-ignored, local only).
 - Export around 500–700px wide — enough for retina screens without bloating the
   page. Keep each file well under ~300KB.

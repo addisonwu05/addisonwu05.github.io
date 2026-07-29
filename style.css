@@ -28,7 +28,9 @@ section h3 + ul li {
 }
 
 .container {
-  max-width: calc(800px + 12ch);
+  /* Wide enough that every publication entry fits on exactly three lines:
+     title / authors / venue + press. Widest entry needs ~900px of text. */
+  max-width: 1500px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -107,19 +109,25 @@ section ul li {
 
 .pub-fig {
   flex-shrink: 0;
-  width: 170px;
-  margin-right: 1.25rem;
+  width: 280px;
+  margin-right: 1.5rem;
   line-height: 0;
 }
 
+/* Every figure occupies an identical box, so the entries line up in a grid.
+   object-fit: contain scales without cropping; object-position pins each
+   figure to the left so the column edge stays crisp. */
 .pub-fig img {
   width: 100%;
-  height: auto;
-  max-height: 130px;
+  height: 105px;
   object-fit: contain;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
+  object-position: left center;
   background: #fff;
+}
+
+.pub-fig a:hover img,
+.pub-fig a:focus img {
+  opacity: 0.75;
 }
 
 .pub-body {
@@ -171,12 +179,12 @@ section ul li {
   }
 
   .pub-fig {
-    width: 100px;
+    width: 130px;
     margin-right: 0.85rem;
   }
 
   .pub-fig img {
-    max-height: 90px;
+    height: 60px;
   }
 }
 
@@ -197,11 +205,11 @@ section ul li {
   }
 
   .pub-fig {
-    width: 84px;
+    width: 105px;
     margin-right: 0.75rem;
   }
 
   .pub-fig img {
-    max-height: 76px;
+    height: 48px;
   }
 }
