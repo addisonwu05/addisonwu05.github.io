@@ -1,164 +1,107 @@
-:root {
-  --fg: #111;
-  --fg-muted: #666;
-  --bg: #fff;
-  --rule: #e5e5e5;
-  --link: #111;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fg: #e8e8e8;
-    --fg-muted: #999;
-    --bg: #111;
-    --rule: #2a2a2a;
-    --link: #e8e8e8;
-  }
-}
-
 html {
   overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 1.65;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: var(--bg);
-  color: var(--fg);
+  background: white;
+  color: #000;
+  line-height: 1.6;
 }
 
-.container {
-  max-width: 34rem;
-  margin: 0 auto;
-  padding: 7rem 1.5rem 6rem;
-}
-
-/* Name — the only large type on the page. */
-h1 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  margin: 0 0 2.5rem;
-}
-
-/* The bio: the one statement the page exists to make. Set larger than
-   everything else so it reads first and alone. */
-.bio {
-  font-size: 1.5rem;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
-  font-weight: 400;
-  margin: 0 0 4rem;
-  text-wrap: balance;
-}
-
-/* Section labels sit quietly to the side of their content. */
-h2 {
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--fg-muted);
-  margin: 0 0 1.25rem;
-}
-
-section {
-  margin-bottom: 3.5rem;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* "Currently" — one line each, org carries the link. */
-.now li {
+section h3 {
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.now li:last-child {
-  margin-bottom: 0;
+section h3 + ul li {
+  margin-bottom: 0.6rem;
 }
-
-.meta {
-  display: block;
-  color: var(--fg-muted);
-  font-size: 0.9rem;
-}
-
-/* The one paper called out by name; everything else lives on Scholar. */
-.paper {
-  margin: 0 0 1.25rem;
-}
-
-.more {
-  margin: 0;
-  color: var(--fg-muted);
-  font-size: 0.9rem;
-}
-
-a,
-a:visited {
-  color: var(--link);
-  text-decoration: none;
-  border-bottom: 1px solid var(--rule);
-}
-
-a:hover,
-a:focus {
-  border-bottom-color: var(--fg);
-}
-
-/* Contact row: plain, comma-free, no chrome. */
-.links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  font-size: 0.9rem;
-}
-
-footer {
-  margin-top: 5rem;
-  font-size: 0.8rem;
-  color: var(--fg-muted);
-}
-
-@media (max-width: 640px) {
-  body {
-    font-size: 16px;
-  }
-
-  .container {
-    padding: 4rem 1.5rem 4rem;
-  }
-
-  .bio {
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
-  }
-
-  section {
-    margin-bottom: 2.75rem;
-  }
-}
-
-/* ---------------------------------------------------------------------------
-   Retained so academics.html and publications.html keep rendering until they
-   get the same treatment. Nothing on index.html uses these.
-   --------------------------------------------------------------------------- */
 
 .course-code {
   display: inline-block;
   min-width: 130px;
   font-weight: bold;
-  padding-right: 0.5rem;
+  padding-right: 0.5rem; /* 👈 adds space between code and course name */
 }
 
+.container {
+  /* Sized to the widest publication row so the prose, headings and entries all
+     end at the same right edge: 280px figure + 24px gap + ~900px of text
+     (the longest title) + 32px padding. Any wider and only the prose stretches. */
+  max-width: 1250px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.profile-pic {
+  width: 186px;
+  height: 186px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 1.5rem;
+  margin-top: 29px;
+  flex-shrink: 0;
+}
+
+.header-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Unified link styling */
+a,
+a:visited,
+a:hover,
+a:focus {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+/* Optional: Slight hover effect if desired */
+a:hover,
+a:focus {
+  opacity: 0.8;
+}
+
+.links a {
+  margin-right: 8px;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.updates-list li {
+  margin-bottom: 12px;   /* vertical spacing between items */
+  line-height: 1.5;      /* improves readability */
+}
+
+section ul li {
+  padding-left: 0.75rem;
+}
+
+/* Publication entries: teaser figure left, details right */
 .pub {
   display: flex;
   align-items: center;
@@ -172,6 +115,9 @@ footer {
   line-height: 0;
 }
 
+/* Every figure occupies an identical box, so the entries line up in a grid.
+   object-fit: contain scales without cropping; centering in the box puts every
+   figure on the same vertical centre axis regardless of its aspect ratio. */
 .pub-fig img {
   width: 100%;
   height: 105px;
@@ -183,21 +129,20 @@ footer {
 .pub-fig a {
   display: block;
   cursor: zoom-in;
-  border-bottom: 0;
 }
 
-.pub-body {
-  flex: 1;
-  min-width: 0;
+.pub-fig a:hover img,
+.pub-fig a:focus img {
+  opacity: 0.75;
 }
 
-.pub.no-fig .pub-fig {
-  display: none;
-}
-
+/* Full-size figure overlay (see lightbox.js) */
 .lightbox {
   position: fixed;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 100;
   display: none;
   align-items: center;
@@ -230,4 +175,88 @@ footer {
   font-size: 2.75rem;
   line-height: 1;
   cursor: pointer;
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Entries without a figure (or whose figure fails to load) fall back to
+   full-width text, so nothing breaks before the images are added. */
+.pub.no-fig .pub-fig {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .container {
+    margin: 1.25rem auto;
+  }
+
+  /* Keep the desktop layout on mobile: photo left, details right */
+  .header {
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    margin-right: 1rem;
+    margin-top: 4px;
+  }
+
+  .header-text {
+    min-width: 0;
+  }
+
+  .header-text h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  .header-text p {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    overflow-wrap: break-word;
+  }
+
+  .links {
+    font-size: 0.95rem;
+  }
+
+  .pub-fig {
+    width: 130px;
+    margin-right: 0.85rem;
+  }
+
+  .pub-fig img {
+    height: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile-pic {
+    width: 96px;
+    height: 96px;
+    margin-right: 0.85rem;
+  }
+
+  .header-text h1 {
+    font-size: 1.35rem;
+  }
+
+  .header-text p,
+  .links {
+    font-size: 0.9rem;
+  }
+
+  .pub-fig {
+    width: 105px;
+    margin-right: 0.75rem;
+  }
+
+  .pub-fig img {
+    height: 48px;
+  }
 }
