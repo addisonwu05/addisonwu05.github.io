@@ -188,6 +188,13 @@ section ul li {
   display: none;
 }
 
+/* Paper called out beneath a Currently line — reads as a quiet aside to that
+   line rather than a badge stuck onto it, so no bold and no colour tag. */
+.highlight {
+  font-size: 0.95em;
+  color: #555;
+}
+
 @media (max-width: 640px) {
   .container {
     margin: 1.25rem auto;
