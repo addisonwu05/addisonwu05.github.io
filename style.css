@@ -85,19 +85,6 @@ ul {
   margin-bottom: 0;
 }
 
-/* Experience rows: role on top, org + date beneath in muted type. */
-.exp li {
-  margin-bottom: 1.15rem;
-}
-
-.exp li:last-child {
-  margin-bottom: 0;
-}
-
-.exp .role {
-  display: block;
-}
-
 .meta {
   display: block;
   color: var(--fg-muted);
