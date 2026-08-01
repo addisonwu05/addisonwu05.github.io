@@ -36,7 +36,17 @@ section h3 + ul li {
 .header {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+}
+
+/* The header lines and the section heading below them are all one rhythm,
+   so every gap in the run is the same 0.5rem. */
+.header-text p {
+  margin: 0 0 0.5rem;
+}
+
+.links {
+  margin-bottom: 0.5rem;
 }
 
 .profile-pic {
@@ -77,6 +87,15 @@ a:focus {
 
 h1, h2 {
   margin-bottom: 0.5rem;
+}
+
+section h2 {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+section h2 + ul {
+  margin-top: 0.5rem;
 }
 
 section {
