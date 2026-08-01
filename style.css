@@ -28,10 +28,7 @@ section h3 + ul li {
 }
 
 .container {
-  /* Sized to the widest publication row so the prose, headings and entries all
-     end at the same right edge: 280px figure + 24px gap + ~900px of text
-     (the longest title) + 32px padding. Any wider and only the prose stretches. */
-  max-width: 1250px;
+  max-width: calc(800px + 12ch);
   margin: 2rem auto;
   padding: 0 1rem;
 }
