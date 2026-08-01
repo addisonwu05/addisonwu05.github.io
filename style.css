@@ -27,7 +27,11 @@ section h3 + ul li {
   padding-right: 0.5rem; /* 👈 adds space between code and course name */
 }
 
+/* width: fit-content shrinks the box to the longest line rather than sitting at
+   a fixed width, so `margin: auto` centres the text you can actually see
+   instead of centring a box with dead space collected on one side. */
 .container {
+  width: fit-content;
   max-width: 1040px;
   margin: 2rem auto;
   padding: 0 1rem;
