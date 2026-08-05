@@ -102,8 +102,10 @@ section h2 + ul {
   margin-top: 0.5rem;
 }
 
+/* The homepage reads as one continuous run, so the break before a new heading is
+   a single line of space. 2rem here divided the page rather than sectioning it. */
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 footer {
