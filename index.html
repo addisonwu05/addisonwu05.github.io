@@ -15,7 +15,7 @@
 
   <div class="container">
     <header class="header" id="about">
-      <img src="profile8.jpg" alt="Addison J. Wu" class="profile-pic" />
+      <img id="profile-pic" src="profile7.jpg" alt="Addison J. Wu" class="profile-pic" />
       <div class="header-text">
         <h1>Addison J. Wu</h1>
         <div class="links">
@@ -86,6 +86,14 @@
       </p>
     </section>
   </div>
+
+  <script>
+    // profile7 is in the markup so the photo renders without JS and starts
+    // loading immediately; half the time we swap in the other one.
+    if (Math.random() < 0.5) {
+      document.getElementById('profile-pic').src = 'profile8.jpg';
+    }
+  </script>
 
 </body>
 </html>
