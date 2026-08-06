@@ -40,7 +40,7 @@ section h3 + ul li {
 .header {
   display: flex;
   align-items: stretch;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 /* The photo's height comes from the text column beside it, so the two always
@@ -56,6 +56,13 @@ section h3 + ul li {
   margin: 0 0 0.5rem;
 }
 
+/* The last line of text sets the bottom of the header block, and the photo
+   stretches to exactly that. A trailing margin here would make the photo
+   overshoot the text, so the gap to the next section lives on .header. */
+.header-text p:last-child {
+  margin-bottom: 0;
+}
+
 .links {
   margin-bottom: 0.5rem;
 }
@@ -65,7 +72,6 @@ section h3 + ul li {
   height: auto;
   align-self: stretch;
   object-fit: cover;
-  border-radius: 5px;
   margin-right: 1.5rem;
   flex-shrink: 0;
 }
