@@ -4,3 +4,6 @@ publications_fr.html
 .DS_Store
 figures/originals/
 sop-framing.md
+# Private CV source, checked out here for convenience. Must never be committed
+# into this public repo — `make deploy` runs `git add -A`.
+Addison-Wu-CV/
