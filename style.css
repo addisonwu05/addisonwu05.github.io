@@ -1,5 +1,9 @@
 html {
   overflow-y: scroll;
+  /* The whole page renders 25% larger. Text and every rem-based gap scale from
+     here; the two px sizes that matter (container width, photo width) are
+     scaled by hand to match. */
+  font-size: 125%;
 }
 
 body {
@@ -32,7 +36,7 @@ section h3 + ul li {
    instead of centring a box with dead space collected on one side. */
 .container {
   width: fit-content;
-  max-width: 1040px;
+  max-width: 1300px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -68,7 +72,7 @@ section h3 + ul li {
 }
 
 .profile-pic {
-  width: 186px;
+  width: 233px;
   height: auto;
   align-self: stretch;
   object-fit: cover;
@@ -99,7 +103,7 @@ a:focus {
 }
 
 .links a {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 h1, h2 {
