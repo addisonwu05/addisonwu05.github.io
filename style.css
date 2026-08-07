@@ -72,7 +72,7 @@ section h3 + ul li {
 }
 
 .profile-pic {
-  width: 210px;
+  width: 200px;
   height: auto;
   align-self: stretch;
   object-fit: cover;
@@ -239,8 +239,8 @@ section ul li {
   }
 
   .profile-pic {
-    width: 135px;
-    height: 135px;
+    width: 128px;
+    height: 128px;
     margin-right: 1rem;
     margin-top: 5px;
   }
@@ -276,8 +276,8 @@ section ul li {
 
 @media (max-width: 400px) {
   .profile-pic {
-    width: 108px;
-    height: 108px;
+    width: 103px;
+    height: 103px;
     margin-right: 0.85rem;
   }
 
