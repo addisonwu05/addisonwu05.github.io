@@ -232,8 +232,10 @@ section ul li {
     margin: 1.25rem auto;
   }
 
-  /* Keep the desktop layout on mobile: photo left, details right */
+  /* Stack on mobile: a photo beside the text leaves the bio only ~60% of a
+     phone screen, so it wraps into a narrow column. Photo on top instead. */
   .header {
+    flex-direction: column;
     align-items: flex-start;
     margin-bottom: 1.5rem;
   }
@@ -241,8 +243,8 @@ section ul li {
   .profile-pic {
     width: 128px;
     height: 128px;
-    margin-right: 1rem;
-    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
   }
 
   .header-text {
@@ -278,7 +280,7 @@ section ul li {
   .profile-pic {
     width: 103px;
     height: 103px;
-    margin-right: 0.85rem;
+    margin-right: 0;
   }
 
   .header-text h1 {
