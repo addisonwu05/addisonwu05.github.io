@@ -106,10 +106,6 @@ a:focus {
   opacity: 0.8;
 }
 
-.links a {
-  margin-right: 10px;
-}
-
 h1, h2 {
   margin-bottom: 0.5rem;
 }
@@ -129,8 +125,18 @@ section h2 + ul {
   margin-bottom: 1rem;
 }
 
-.filters a {
-  margin-right: 10px;
+/* The filter row names each group, so the headings below it would only say
+   the same thing twice. They stay in the markup for structure and screen
+   readers, out of sight. */
+section[data-topic] h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .filters a.is-active {
