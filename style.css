@@ -31,12 +31,15 @@ section h3 + ul li {
   padding-right: 0.5rem; /* 👈 adds space between code and course name */
 }
 
-/* width: fit-content shrinks the box to the longest line rather than sitting at
-   a fixed width, so `margin: auto` centres the text you can actually see
-   instead of centring a box with dead space collected on one side. */
+/* A fixed width, NOT fit-content. Sizing the box to its longest line means the
+   page re-measures itself whenever the content changes -- filtering the paper
+   list would drop the widest author row and the whole layout would jump to a
+   new width. 1040px is the header at its natural size: 200px photo, its
+   margin, and the 52rem bio measure. */
 .container {
-  width: fit-content;
-  max-width: 1300px;
+  width: 100%;
+  max-width: 1040px;
+  box-sizing: border-box;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -98,9 +101,7 @@ section h3 + ul li {
 
 .header-text {
   flex: 1;
-  /* The container is width: fit-content, so an unconstrained bio paragraph
-     would stretch the whole page out to its max-width. Cap the measure here
-     and the rest of the page keeps its own natural width. */
+  /* Cap the bio at a comfortable reading measure. */
   max-width: 52rem;
   display: flex;
   flex-direction: column;
