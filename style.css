@@ -123,6 +123,21 @@ section h2 + ul {
   margin-top: 0.5rem;
 }
 
+/* Topic filter above the paper list, styled like the header's link row. The
+   selected one goes black so it reads as a position rather than a link. */
+.filters {
+  margin-bottom: 1rem;
+}
+
+.filters a {
+  margin-right: 10px;
+}
+
+.filters a.is-active {
+  color: #000;
+  font-weight: bold;
+}
+
 /* The homepage reads as one continuous run, so the break before a new heading is
    a single line of space. 2rem here divided the page rather than sectioning it. */
 section {

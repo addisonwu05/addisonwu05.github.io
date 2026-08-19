@@ -38,7 +38,14 @@
       </div>
     </header>
 
-    <section id="papers">
+    <nav class="filters" aria-label="Filter papers by topic">
+      <a href="#all" data-filter="all">All Papers</a>|
+      <a href="#behavior" data-filter="behavior">Model Behavior and Evaluation</a>|
+      <a href="#data" data-filter="data">Data and Training Constraints</a>|
+      <a href="#physical" data-filter="physical">Physical Systems</a>
+    </nav>
+
+    <section id="papers" data-topic="behavior">
       <h2>Model Behavior and Evaluation</h2>
       <div class="pub">
         <div class="pub-fig"><a href="figures/full/segregation.png"><img src="figures/segregation.png" alt="Novel social biases" onerror="this.closest(&#39;.pub&#39;).classList.add(&#39;no-fig&#39;)" /></a></div>
@@ -130,7 +137,7 @@
       </div>
     </section>
 
-    <section>
+    <section data-topic="data">
       <h2>Data and Training Constraints</h2>
       <div class="pub">
         <div class="pub-fig"><a href="figures/full/polysemy.png"><img src="figures/polysemy.png" alt="Polysemous words in multimodal models" onerror="this.closest(&#39;.pub&#39;).classList.add(&#39;no-fig&#39;)" /></a></div>
@@ -170,8 +177,8 @@
       </div>
     </section>
 
-    <section>
-      <h2>Other</h2>
+    <section data-topic="physical">
+      <h2>Physical Systems</h2>
       <div class="pub">
         <div class="pub-fig"><a href="figures/full/infrasound.png"><img src="figures/infrasound.png" alt="Infrasound source localization" onerror="this.closest(&#39;.pub&#39;).classList.add(&#39;no-fig&#39;)" /></a></div>
         <div class="pub-body">
@@ -193,6 +200,7 @@
   </div>
 
   <script src="lightbox.js"></script>
+  <script src="filters.js"></script>
 
   <script>
     // profile7 is in the markup so the photo renders without JS and starts
