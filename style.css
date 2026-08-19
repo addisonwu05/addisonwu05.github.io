@@ -31,14 +31,17 @@ section h3 + ul li {
   padding-right: 0.5rem; /* 👈 adds space between code and course name */
 }
 
-/* A fixed width, NOT fit-content. Sizing the box to its longest line means the
-   page re-measures itself whenever the content changes -- filtering the paper
-   list would drop the widest author row and the whole layout would jump to a
-   new width. 1040px is the header at its natural size: 200px photo, its
-   margin, and the 52rem bio measure. */
+/* The page is exactly as wide as the header: the photo, the gap beside it, and
+   the bio's reading measure, plus this box's own padding. Everything below
+   lines up with that span. Written as a sum rather than a round number so it
+   still holds if the photo or the bio measure changes.
+
+   It has to be a fixed width rather than fit-content: sizing the box to its
+   longest line would make the page re-measure itself whenever the paper list
+   is filtered, and the layout would jump to a new width on every click. */
 .container {
   width: 100%;
-  max-width: 1040px;
+  max-width: calc(200px + 1.5rem + 52rem + 2rem);
   box-sizing: border-box;
   margin: 2rem auto;
   padding: 0 1rem;
