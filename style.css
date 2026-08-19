@@ -82,6 +82,10 @@ section h3 + ul li {
 
 .header-text {
   flex: 1;
+  /* The container is width: fit-content, so an unconstrained bio paragraph
+     would stretch the whole page out to its max-width. Cap the measure here
+     and the rest of the page keeps its own natural width. */
+  max-width: 52rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
