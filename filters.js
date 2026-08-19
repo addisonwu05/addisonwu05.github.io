@@ -1,4 +1,5 @@
-// Topic filter for the paper list. The filter lives in the URL hash so a link
+// Topic filter for the paper list. Entries sit in one reverse-chronological
+// run and carry their own topic, so filtering never reorders them. The filter lives in the URL hash so a link
 // like index.html#data opens straight onto that topic, and back/forward work.
 // Without JS nothing is hidden, so the full list still reads top to bottom.
 (function () {
@@ -6,11 +7,11 @@
   if (!nav) return;
 
   var links = Array.prototype.slice.call(nav.querySelectorAll('a[data-filter]'));
-  var sections = Array.prototype.slice.call(document.querySelectorAll('section[data-topic]'));
+  var entries = Array.prototype.slice.call(document.querySelectorAll('.pub[data-topic]'));
 
   function apply(name) {
-    sections.forEach(function (section) {
-      section.hidden = name !== 'all' && section.getAttribute('data-topic') !== name;
+    entries.forEach(function (entry) {
+      entry.hidden = name !== 'all' && entry.getAttribute('data-topic') !== name;
     });
     links.forEach(function (link) {
       var on = link.getAttribute('data-filter') === name;
