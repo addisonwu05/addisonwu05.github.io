@@ -1,9 +1,9 @@
 html {
   overflow-y: scroll;
-  /* The whole page renders 25% larger. Text and every rem-based gap scale from
-     here; the two px sizes that matter (container width, photo width) are
-     scaled by hand to match. */
-  font-size: 125%;
+  /* Page scale. 125% was too large once the paper list landed, so this is
+     0.75 of that. Text and every rem-based gap scale from here; the two px
+     sizes that matter (container width, photo width) do not. */
+  font-size: 93.75%;
 }
 
 body {

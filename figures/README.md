@@ -17,6 +17,7 @@ so you can add them one at a time.
 | `occludebench.png` | OccludeBench: Can VLMs See the Hint? |
 | `query_timing.png` | Query Timing Produces Opposite Positional Biases Between LLMs and Humans |
 | `unified_model.png` | Guess the Unified Model |
+| `sportd.png` | SportD: Can VLMs Physically Strategize? |
 
 Notes:
 
