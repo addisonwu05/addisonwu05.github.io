@@ -67,6 +67,22 @@ section h3 + ul li {
   margin-bottom: 0;
 }
 
+/* Laying the link rows out as flex rows means the whitespace between tags in
+   the markup is ignored, so every gap is exactly the `gap` value. Relying on a
+   literal space around each "|" left the spacing at the mercy of how the
+   source happened to be indented. */
+.links,
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+}
+
+.sep {
+  color: #999;
+}
+
 .links {
   margin-bottom: 0.5rem;
 }
