@@ -1,7 +1,8 @@
-// Topic filter for the paper list. Entries sit in one reverse-chronological
-// run and carry their own topic, so filtering never reorders them. The filter lives in the URL hash so a link
-// like index.html#data opens straight onto that topic, and back/forward work.
-// Without JS nothing is hidden, so the full list still reads top to bottom.
+// Topic filter for the paper list. Entries sit in one fixed run and carry their
+// own topic, so filtering removes rows without ever reordering them. The choice
+// lives in the URL hash, so index.html#data opens straight onto that topic and
+// back/forward step through filters. Without JS nothing is hidden and the full
+// list still reads top to bottom.
 (function () {
   var nav = document.querySelector('.filters');
   if (!nav) return;

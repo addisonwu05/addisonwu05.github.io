@@ -167,6 +167,12 @@ section ul li {
   padding-left: 0.75rem;
 }
 
+/* .pub sets display: flex, which outranks the browser's own [hidden] rule, so
+   the filter's hidden attribute needs saying again here or it does nothing. */
+.pub[hidden] {
+  display: none;
+}
+
 /* Publication entries: teaser figure left, details right */
 .pub {
   display: flex;
