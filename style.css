@@ -173,6 +173,14 @@ section ul li {
   padding-left: 0.75rem;
 }
 
+/* Outlet names, talk names and the like are the only bold text inside a link
+   in an entry -- paper titles and author names are bold but unlinked. Holding
+   these together means a press row can wrap onto another line without
+   splitting "MIT Technology Review" across the break. */
+.pub-body a strong {
+  white-space: nowrap;
+}
+
 /* .pub sets display: flex, which outranks the browser's own [hidden] rule, so
    the filter's hidden attribute needs saying again here or it does nothing. */
 .pub[hidden] {
