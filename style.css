@@ -33,9 +33,9 @@ section h3 + ul li {
 
 /* The page is exactly as wide as the header: the photo, the gap beside it, and
    the bio's reading measure, plus this box's own padding. Everything below
-   lines up with that span. The measure is 58rem rather than the bio's natural
-   52 so the hiring paper's press row clears in one line: six outlets need
-   772px, and 58rem leaves the entry body 790px. Written as a sum rather than a round number so it
+   lines up with that span. The measure is the bio's own, not one
+   stretched to fit the longest press row -- those wrap now, and the outlet
+   names are held together so a break never lands inside one. Written as a sum rather than a round number so it
    still holds if the photo or the bio measure changes.
 
    It has to be a fixed width rather than fit-content: sizing the box to its
@@ -43,7 +43,7 @@ section h3 + ul li {
    is filtered, and the layout would jump to a new width on every click. */
 .container {
   width: 100%;
-  max-width: calc(200px + 1.5rem + 58rem + 2rem);
+  max-width: calc(200px + 1.5rem + 52rem + 2rem);
   box-sizing: border-box;
   margin: 2rem auto;
   padding: 0 1rem;
@@ -107,7 +107,7 @@ section h3 + ul li {
 .header-text {
   flex: 1;
   /* Cap the bio at a comfortable reading measure. */
-  max-width: 58rem;
+  max-width: 52rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
