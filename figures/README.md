@@ -18,6 +18,7 @@ so you can add them one at a time.
 | `query_timing.png` | Query Timing Produces Opposite Positional Biases Between LLMs and Humans |
 | `unified_model.png` | Guess the Unified Model |
 | `sportd.png` | SportD: Can VLMs Physically Strategize? |
+| `forensics.png` | Benchmarking Multimodal Large Language Models for Forensic Sciences |
 
 Notes:
 
