@@ -212,9 +212,11 @@
 
   <script>
     // profile7 is in the markup so the photo renders without JS and starts
-    // loading immediately; half the time we swap in the other one.
-    if (Math.random() < 0.5) {
-      document.getElementById('profile-pic').src = 'profile8.jpg';
+    // loading immediately; two thirds of the time we swap in one of the others.
+    var pics = ['profile7.jpg', 'profile8.jpg', 'profile9.jpg'];
+    var pick = pics[Math.floor(Math.random() * pics.length)];
+    if (pick !== 'profile7.jpg') {
+      document.getElementById('profile-pic').src = pick;
     }
   </script>
 
