@@ -18,6 +18,7 @@ so you can add them one at a time.
 | `query_timing.png` | Query Timing Produces Opposite Positional Biases Between LLMs and Humans |
 | `unified_model.png` | Guess the Unified Model |
 | `sportd.png` | SportD: Can VLMs Physically Strategize? |
+| `adversarial_influence.png` | How does Adversarial Influence Scale in Multi-Agent Systems? |
 
 Notes:
 
