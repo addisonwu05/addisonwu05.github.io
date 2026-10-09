@@ -94,6 +94,11 @@ section h3 + ul li {
   margin-bottom: 0.5rem;
 }
 
+/* The photo is exactly as tall as the text beside it. Stretching only does
+   that while the text is the taller of the two; with a short bio the photo's
+   own 200px height set the row and the text floated in the middle of it. Size
+   containment stops the image from contributing a height, so the text alone
+   sets the row and the photo fills it. */
 .profile-pic {
   width: 200px;
   height: auto;
@@ -101,6 +106,7 @@ section h3 + ul li {
   object-fit: cover;
   margin-right: 1.5rem;
   flex-shrink: 0;
+  contain: size;
 }
 
 .header-text {
@@ -138,11 +144,6 @@ section h2 {
 
 section h2 + ul {
   margin-top: 0.5rem;
-}
-
-/* The line introducing the paper list. */
-.papers-lead {
-  margin: 0 0 1rem;
 }
 
 /* The homepage reads as one continuous run, so the break before a new heading is
@@ -261,7 +262,81 @@ section ul li {
   display: none;
 }
 
+/* Homepage timeline. One grid for the whole thing, so the date column is
+   exactly as wide as the widest date and every entry's text starts on the same
+   line. The entries dissolve into it; the gap beside the dates is the photo's.
+   Dates sit flush with the photo's left edge. */
+#timeline {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.tl-entry {
+  display: contents;
+}
+
+.tl-date {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-org {
+  font-weight: bold;
+}
+
+.tl-strands {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tl-strands > li {
+  margin-top: 0.4rem;
+  padding-left: 0;
+}
+
+/* Each research topic folds its papers away behind a [+], so the timeline
+   reads as a list of topics until someone wants the detail. */
+.tl-strands summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.tl-strands summary::-webkit-details-marker {
+  display: none;
+}
+
+.tl-strands summary::after {
+  content: " [+]";
+  color: #1a0dab;
+}
+
+.tl-strands details[open] > summary::after {
+  content: " [\2212]";
+}
+
+.tl-pubs {
+  margin-top: 0.75rem;
+}
+
 @media (max-width: 640px) {
+  /* The date sits above its entry instead of beside it. */
+  #timeline {
+    display: block;
+  }
+
+  .tl-entry {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+
+  .tl-date {
+    font-size: 0.9rem;
+  }
+
   .container {
     margin: 1.25rem auto;
   }

@@ -19,6 +19,7 @@ so you can add them one at a time.
 | `unified_model.png` | Guess the Unified Model |
 | `sportd.png` | SportD: Can VLMs Physically Strategize? |
 | `adversarial_influence.png` | How does Adversarial Influence Scale in Multi-Agent Systems? |
+| `cheatbench.png` | CheatBench: Measuring Reward Gaming in AI Agents |
 
 Notes:
 
