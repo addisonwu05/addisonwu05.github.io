@@ -311,25 +311,21 @@ section ul li {
   font-style: italic;
 }
 
-/* A topic shows its first paper; the rest wait behind [show more], which
-   sits in the text column right under the paper it follows. */
-.tl-more summary {
-  cursor: pointer;
-  list-style: none;
+/* A topic shows its first paper; [show more] beside the topic name reveals
+   the rest. It's a button, styled to read as one of the page's links. */
+.tl-toggle {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-style: normal;
   color: #1a0dab;
-  margin: 0 0 0.9rem calc(200px + 1.25rem);
+  cursor: pointer;
 }
 
-.tl-more summary::-webkit-details-marker {
-  display: none;
-}
-
-.tl-more summary::after {
-  content: "[show more]";
-}
-
-.tl-more[open] > summary::after {
-  content: "[show less]";
+.tl-toggle:hover,
+.tl-toggle:focus {
+  opacity: 0.8;
 }
 
 .tl-pubs {
@@ -390,10 +386,6 @@ section ul li {
     height: 60px;
   }
 
-  .tl-more summary {
-    margin-left: calc(130px + 0.85rem);
-  }
-
   .container {
     margin: 1.25rem auto;
   }
@@ -450,10 +442,6 @@ section ul li {
 
   #timeline .pub-fig img {
     height: 48px;
-  }
-
-  .tl-more summary {
-    margin-left: calc(105px + 0.75rem);
   }
 
   .profile-pic {
