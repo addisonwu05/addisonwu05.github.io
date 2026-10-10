@@ -297,16 +297,27 @@ section ul li {
 }
 
 .tl-strands > li {
-  margin-top: 0.4rem;
+  margin-top: 1.25rem;
   padding-left: 0;
 }
 
-/* A topic shows its first paper; the rest wait behind [show more]. */
+.tl-strands > li:first-child {
+  margin-top: 0.6rem;
+}
+
+/* The topic heads its papers, so it carries the weight the paper titles
+   under it would otherwise outrank. */
+.tl-topic {
+  font-style: italic;
+}
+
+/* A topic shows its first paper; the rest wait behind [show more], which
+   sits in the text column right under the paper it follows. */
 .tl-more summary {
   cursor: pointer;
   list-style: none;
   color: #1a0dab;
-  margin-bottom: 1.5em;
+  margin: 0 0 0.9rem calc(200px + 1.25rem);
 }
 
 .tl-more summary::-webkit-details-marker {
@@ -322,7 +333,28 @@ section ul li {
 }
 
 .tl-pubs {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Papers inside the timeline: a smaller thumbnail, flush left under the
+   topic so every figure starts on the same edge, and tighter spacing. */
+#timeline .pub {
+  margin-bottom: 0.9rem;
+}
+
+#timeline .pub-fig {
+  width: 200px;
+  margin-right: 1.25rem;
+}
+
+#timeline .pub-fig img {
+  height: 84px;
+  object-position: left center;
+}
+
+/* Press outlets read as links, not headlines. */
+#timeline .pub-body a strong {
+  font-weight: normal;
 }
 
 @media (max-width: 640px) {
@@ -347,6 +379,19 @@ section ul li {
   .tl-who,
   .tl-strands {
     grid-column: 1 / -1;
+  }
+
+  #timeline .pub-fig {
+    width: 130px;
+    margin-right: 0.85rem;
+  }
+
+  #timeline .pub-fig img {
+    height: 60px;
+  }
+
+  .tl-more summary {
+    margin-left: calc(130px + 0.85rem);
   }
 
   .container {
@@ -398,6 +443,19 @@ section ul li {
 }
 
 @media (max-width: 400px) {
+  #timeline .pub-fig {
+    width: 105px;
+    margin-right: 0.75rem;
+  }
+
+  #timeline .pub-fig img {
+    height: 48px;
+  }
+
+  .tl-more summary {
+    margin-left: calc(105px + 0.75rem);
+  }
+
   .profile-pic {
     width: 103px;
     height: 103px;
