@@ -280,9 +280,11 @@ section ul li {
   display: contents;
 }
 
+/* Same size as the lab name beside it, but regular weight. */
 .tl-date {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
+  font-size: 1.15em;
 }
 
 .tl-org {
