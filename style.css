@@ -305,10 +305,9 @@ section ul li {
   margin-top: 0.6rem;
 }
 
-/* The topic heads its papers, so it carries the weight the paper titles
-   under it would otherwise outrank. */
+/* The topic heads its papers. */
 .tl-topic {
-  font-style: italic;
+  font-weight: bold;
 }
 
 /* A topic shows its first paper; [show more] beside the topic name reveals
@@ -318,7 +317,7 @@ section ul li {
   border: 0;
   background: none;
   font: inherit;
-  font-style: normal;
+  font-weight: normal;
   color: #1a0dab;
   cursor: pointer;
 }
