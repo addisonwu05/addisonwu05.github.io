@@ -265,12 +265,14 @@ section ul li {
 /* Homepage timeline. One grid for the whole thing, so the date column is
    exactly as wide as the widest date and every entry's text starts on the same
    line. The entries dissolve into it; the gap beside the dates is the photo's.
-   Dates sit flush with the photo's left edge. */
+   Dates sit flush with the photo's left edge, on the lab name's baseline
+   (the lab name is set larger, so top-aligning would leave the date high). */
 #timeline {
   display: grid;
   grid-template-columns: max-content 1fr;
   column-gap: 1.5rem;
   row-gap: 1.25rem;
+  align-items: baseline;
   margin-bottom: 1.25rem;
 }
 
@@ -285,6 +287,7 @@ section ul li {
 
 .tl-org {
   font-weight: bold;
+  font-size: 1.15em;
 }
 
 .tl-strands {
@@ -298,24 +301,24 @@ section ul li {
   padding-left: 0;
 }
 
-/* Each research topic folds its papers away behind a [+], so the timeline
-   reads as a list of topics until someone wants the detail. */
-.tl-strands summary {
+/* A topic shows its first paper; the rest wait behind [show more]. */
+.tl-more summary {
   cursor: pointer;
   list-style: none;
+  color: #1a0dab;
+  margin-bottom: 1.5em;
 }
 
-.tl-strands summary::-webkit-details-marker {
+.tl-more summary::-webkit-details-marker {
   display: none;
 }
 
-.tl-strands summary::after {
-  content: " [+]";
-  color: #1a0dab;
+.tl-more summary::after {
+  content: "[show more]";
 }
 
-.tl-strands details[open] > summary::after {
-  content: " [\2212]";
+.tl-more[open] > summary::after {
+  content: "[show less]";
 }
 
 .tl-pubs {
@@ -323,21 +326,27 @@ section ul li {
 }
 
 @media (max-width: 640px) {
-  /* No room for a date column: the date leads the lab's line instead, and
-     everything below runs the full width of the screen. Same size as the lab
-     name so the two share a baseline. */
+  /* No room for a date column: the date leads the lab's line instead, on
+     its baseline, and everything below runs the full width of the screen. */
   #timeline {
     display: block;
   }
 
   .tl-entry {
-    display: flow-root;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 0.75rem;
+    align-items: baseline;
     margin-bottom: 1.25rem;
   }
 
-  .tl-date {
-    float: left;
-    margin-right: 0.75rem;
+  .tl-body {
+    display: contents;
+  }
+
+  .tl-who,
+  .tl-strands {
+    grid-column: 1 / -1;
   }
 
   .container {
