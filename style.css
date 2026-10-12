@@ -333,8 +333,8 @@ section ul li {
   margin-top: 0.5rem;
 }
 
-/* Papers inside the timeline: a smaller thumbnail, flush left under the
-   topic so every figure starts on the same edge, and tighter spacing. */
+/* Papers inside the timeline: a smaller thumbnail, centred in its box like
+   the publications page, and tighter spacing. */
 #timeline .pub {
   margin-bottom: 0.9rem;
 }
@@ -346,7 +346,6 @@ section ul li {
 
 #timeline .pub-fig img {
   height: 84px;
-  object-position: left center;
 }
 
 /* Press outlets read as links, not headlines. */
