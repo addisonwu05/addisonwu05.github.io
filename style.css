@@ -1,9 +1,8 @@
 html {
   overflow-y: scroll;
-  /* Page scale. 125% was too large once the paper list landed, so this is
-     0.75 of that. Text and every rem-based gap scale from here; the two px
-     sizes that matter (container width, photo width) do not. */
-  font-size: 93.75%;
+  /* Page scale: 14px text. Text, every rem-based gap and the header photo
+     scale from here; the paper thumbnails are px and do not. */
+  font-size: 87.5%;
 }
 
 body {
@@ -43,7 +42,7 @@ section h3 + ul li {
    be longest. */
 .container {
   width: 100%;
-  max-width: calc(200px + 1.5rem + 52rem + 2rem);
+  max-width: calc(13.33rem + 1.5rem + 52rem + 2rem);
   box-sizing: border-box;
   margin: 2rem auto;
   padding: 0 1rem;
@@ -98,9 +97,11 @@ section h3 + ul li {
    that while the text is the taller of the two; with a short bio the photo's
    own 200px height set the row and the text floated in the middle of it. Size
    containment stops the image from contributing a height, so the text alone
-   sets the row and the photo fills it. */
+   sets the row and the photo fills it. Its width is in rem so that it scales
+   with the text: the bio wraps the same at any page scale, and the photo keeps
+   the same crop. */
 .profile-pic {
-  width: 200px;
+  width: 13.33rem;
   height: auto;
   align-self: stretch;
   object-fit: cover;
