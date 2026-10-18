@@ -312,8 +312,8 @@ section ul li {
   font-weight: bold;
 }
 
-/* A topic shows its first paper; [show more] beside the topic name reveals
-   the rest. It's a button, styled to read as one of the page's links. */
+/* [show more] beside a topic name reveals the papers it keeps hidden. It's
+   a button, styled to read as one of the page's links. */
 .tl-toggle {
   padding: 0;
   border: 0;
