@@ -90,20 +90,21 @@
                       Media coverage: <a href="https://www.hackshackers.com/new-research-18-of-23-ai-models-prioritize-company-revenue-over-users-when-ads-enter-the-picture/"><strong>Hacks/Hackers</strong></a>, <a href="https://indianexpress.com/article/explained/explained-ai/conflict-ai-users-expert-explains-10699921/"><strong>The Indian Express</strong></a>; Cited in <a href="https://www.judiciary.senate.gov/committee-activity/hearings/your-data-their-profit-the-consumer-cost-of-ai-surveillance-pricing"><strong>Senate testimony</strong></a>
                     </div>
                   </div>
+                </div>
 
-                  <div class="pub">
-                    <div class="pub-fig"><a href="figures/full/motives.png"><img src="figures/motives.png" alt="Motives behind communication" onerror="this.closest(&#39;.pub&#39;).classList.add(&#39;no-fig&#39;)" /></a></div>
-                    <div class="pub-body">
-                      <strong>Are Large Language Models Sensitive to the Motives Behind Communication?</strong><br/>
-                      <strong>Addison J. Wu</strong>*,
-                      Ryan Liu*,
-                      Kerem Oktar*,
-                      Theodore R. Sumers,
-                      Thomas L. Griffiths<br/>
-                      NeurIPS 2025; PragLM @ COLM 2025 <strong style="color: red;">Oral</strong> <a href="https://arxiv.org/abs/2510.19687">[arXiv]</a>
-                    </div>
+                <div class="pub">
+                  <div class="pub-fig"><a href="figures/full/motives.png"><img src="figures/motives.png" alt="Motives behind communication" onerror="this.closest(&#39;.pub&#39;).classList.add(&#39;no-fig&#39;)" /></a></div>
+                  <div class="pub-body">
+                    <strong>Are Large Language Models Sensitive to the Motives Behind Communication?</strong><br/>
+                    <strong>Addison J. Wu</strong>*,
+                    Ryan Liu*,
+                    Kerem Oktar*,
+                    Theodore R. Sumers,
+                    Thomas L. Griffiths<br/>
+                    NeurIPS 2025; PragLM @ COLM 2025 <strong style="color: red;">Oral</strong> <a href="https://arxiv.org/abs/2510.19687">[arXiv]</a>
                   </div>
-
+                </div>
+                <div class="tl-rest" hidden>
                   <div class="pub">
                     <div class="pub-fig"><a href="figures/full/query_timing.png"><img src="figures/query_timing.png" alt="Query timing and positional bias" onerror="this.closest(&#39;.pub&#39;).classList.add(&#39;no-fig&#39;)" /></a></div>
                     <div class="pub-body">
@@ -272,13 +273,14 @@
   <script src="lightbox.js"></script>
 
   <script>
-    // A topic with a button beside its name keeps its later papers hidden;
-    // the button reveals them.
+    // A topic with a button beside its name keeps some of its papers hidden
+    // (each .tl-rest block, so hidden papers can sit between shown ones);
+    // the button reveals them in place.
     document.querySelectorAll('.tl-toggle').forEach(function (btn) {
-      var rest = btn.closest('li').querySelector('.tl-rest');
+      var rests = btn.closest('li').querySelectorAll('.tl-rest');
       btn.addEventListener('click', function () {
-        var open = rest.hidden;
-        rest.hidden = !open;
+        var open = rests[0].hidden;
+        rests.forEach(function (rest) { rest.hidden = !open; });
         btn.textContent = open ? '[show less]' : '[show more]';
         btn.setAttribute('aria-expanded', String(open));
       });
