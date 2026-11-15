@@ -11,13 +11,13 @@ so you can add them one at a time.
 | `ads.png` | Ads in AI Chatbots? An Analysis of How LLMs Navigate Conflicts of Interest |
 | `motives.png` | Are Large Language Models Sensitive to the Motives Behind Communication? |
 | `mind_your_step.png` | Mind Your Step (by Step) |
-| `infrasound.png` | Toward a Neural Network-Based Approach for Improved Atmospheric Infrasound Source Localization |
+| `infrasound.png` | Toward a Neural Network-Based Approach for Improved Atmospheric Infrasound Localization |
 | `polysemy.png` | Where did the ambiguity go? |
 | `rlvr.png` | Quantifying Empirical Compute-Supervision Tradeoffs in RLVR |
 | `occludebench.png` | OccludeBench: Can VLMs See the Hint? |
 | `query_timing.png` | Query Timing Produces Opposite Positional Biases Between LLMs and Humans |
 | `unified_model.png` | Guess the Unified Model |
-| `sportd.png` | SportD: Can VLMs Physically Strategize? |
+| `sportd.png` | SportD: How do VLMs physically strategize? |
 | `adversarial_influence.png` | How does Adversarial Influence Scale in Multi-Agent Systems? |
 | `cheatbench.png` | CheatBench: Measuring Reward Gaming in AI Agents |
 
