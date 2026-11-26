@@ -42,7 +42,7 @@ section h3 + ul li {
    be longest. */
 .container {
   width: 100%;
-  max-width: calc(13.33rem + 1.5rem + 52rem + 2rem);
+  max-width: calc(13.33rem + 1.5rem + 54rem + 2rem);
   box-sizing: border-box;
   margin: 2rem auto;
   padding: 0 1rem;
@@ -113,7 +113,7 @@ section h3 + ul li {
 .header-text {
   flex: 1;
   /* Cap the bio at a comfortable reading measure. */
-  max-width: 52rem;
+  max-width: 54rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
