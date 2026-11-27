@@ -143,6 +143,11 @@ section h2 {
   margin-top: 0;
 }
 
+/* Same size as the lab names in the timeline above it. */
+#awards h2 {
+  font-size: 1.15em;
+}
+
 section h2 + ul {
   margin-top: 0.5rem;
 }
